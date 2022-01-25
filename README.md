@@ -1,5 +1,5 @@
 # 1. Summary
- 본 task는 이미지 속 글자를 검출하여 글자의 영역을 찾아내는 text detection의 성능을 개선하기 위한 task입니다.
+ 본 task는 OCR (Optical Character Recognition)중에 이미지 속 글자를 검출하여 글자의 영역을 찾아내는 text detection의 성능을 개선하기 위한 task입니다.
 Text detection의 성능을 개선하기 위하여 먼저 주어진 eval_data의 특성을 파악해 한국어와 영어가 섞인 데이터를 중심으로 학습이 진행될 수 있도록 표준 데이터셋과 합성 데이터셋으로부터 영어와 한글 데이터를 추가로 구축하였습니다. 
 또한, 기존에 주어진 EAST보다 최신 모델이면서 주어진 환경에 적합할 것으로 보이는 character-level detection method인 CRAFT 모델의 paper를 참조하여 학습을 위한 코드를 구현하였고, hyper-parameter와 데이터셋 조정 등을 통해 성능을 개선시켰습니다.   
 
