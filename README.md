@@ -7,14 +7,14 @@ Text detection의 성능을 개선하기 위하여 먼저 주어진 eval_data의
 # 2. Experimental Results
 Model                      |dataset                     |Recall |precision | F1   | checkpoints
 ---------------------------|----------------------------|-------|----------|------|-------------
-EAST (baseline)                       |ICDAR17_Korean              |0.3830 |0.6729    |0.4881 | [link](https://drive.google.com/file/d/13c1FU1TpCgXtzhUQ4PLPi0-VXlU5m7HS/view?usp=sharing)              
-EAST (baseline)                      |ICDAR13,15,17,19            |0.4215 |0.6673    |0.5166  | [link](https://drive.google.com/file/d/1_pjaaVz_puefa_q8Xf0nuUMYFblcPupu/view?usp=sharing)           
+EAST                        |ICDAR17_Korean              |0.3830 |0.6729    |0.4881 | [link](https://drive.google.com/file/d/13c1FU1TpCgXtzhUQ4PLPi0-VXlU5m7HS/view?usp=sharing)              
+EAST                       |ICDAR13,15,17,19            |0.4215 |0.6673    |0.5166  | [link](https://drive.google.com/file/d/1_pjaaVz_puefa_q8Xf0nuUMYFblcPupu/view?usp=sharing)           
 CRAFT without finetuning   |SynthText                   |0.4600 |0.6364    |0.5340 | [link](https://drive.google.com/file/d/1YXToxjcx7zG5bACx-nrJ_ddtgBzH1fcr/view?usp=sharing)                            
 CRAFT with finetuning      |SynthText, ICDAR15           |0.4879  |0.7266    |0.5838 | [link](https://drive.google.com/file/d/12ajKSHscwLMd1tQWRJWMJwJylL3-Mvu3/view?usp=sharing)                        
 CRAFT with finetuning      |SynthText, ICDAR{17,19}_korean |0.6158|0.8576     |0.7168        | [link](https://drive.google.com/file/d/1YXToxjcx7zG5bACx-nrJ_ddtgBzH1fcr/view?usp=sharing)
 
 - ICDAR{17,19}_Korean 데이터셋은 ICDAR {2017,2019}-MLT에서 한글인 샘플을 모아서 재구성한 데이터셋입니다.
-
+- 테스트 결과는 ICDAR이 아닌 한글이 포함된 text detection 데이터를 바탕으로 실험된 결과입니다. 
 
 # 3. Environment settings
 ## Requirements :
